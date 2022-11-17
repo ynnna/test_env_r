@@ -9,7 +9,8 @@ sel_plot = ggplot(data_arrests, aes(
                 x = data_arrests[, selected_x], 
                 y= rownames(data_arrests)))+
                 geom_bar(stat='identity')+
-                ylab("Location")
+                xlab(selected_x)+
+                ylab("Location")+
                 ggthemes::theme_tufte()
 
 
